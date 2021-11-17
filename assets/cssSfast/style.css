@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-celeste {
+    background-color: #B7E0EE;
+    padding: 20px;
+}
+
+.bg-verde {
+    background-color: #4EAD42;
+}
+
+.bg-blue {
+    background-color: #2F2F41;
+}
+
+.m-section-navAfter {
+    padding-top: 90px;
+}
+
+
+/* .banner-ilustracion {
+    background-image: url('../img/banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+} */
+
+.banner-img__mb {
+    margin-bottom: -20px;
+}
+
+.banner-icon {
+    margin-right: 10px;
+}
+
+.banner-border {
+    border-bottom: 30px solid white;
+}
+
+.contenedor-mt {
+    margin-top: -40px;
+}
+
+.contenedorServicios-mt {
+    margin-top: -80px;
+}
+
+.bg-comillas {
+    background-image: url('../img/comillas.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.bg-portal {
+    background-image: url('../img/portal.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.bg-servicios {
+    background-image: url('../img/servicios.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-bottom: 70px;
+}
