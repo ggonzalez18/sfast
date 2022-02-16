@@ -37,9 +37,9 @@
                     <div class="offcanvas-body">
                         <div class="navbar-nav ms-auto text-center align-items-center">
                             <a class="link" aria-current="page" href="index.html">Home</a>
-                            <a class="link link-active" href="nosotros.html">Nosotros</a>
+                            <a class="link" href="nosotros.html">Nosotros</a>
                             <a class="link" href="servicios.html">Servicios</a>
-                            <a class="link" href="contacto-beneficios.html">Contáctanos</a>
+                            <a class="link link-active" href="contacto-beneficios.html">Contáctanos</a>
                             <hr class="dropdown-divider">
                             <form class="container-fluid justify-content-center">
                                 <a href="" class="text-decoration-none">
@@ -69,22 +69,63 @@
     <section class="bg-celeste m-section-navAfter" title="¿Quiénes somos?">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-5 col-xl-5 col-12 d-flex justify-content-center">
-                    <img src="assets/img/nosotros1.svg" alt="" width="100%">
+                <div class="col-lg-5 col-xl-5 col-12">
+                    <h3 class="title-blue text-center mb-5">Beneficios</h3>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>Servicio de retiro de encomienda gratuito desde tu bodega.</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg></i>Logistica inversa.</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>Integración sistema de ruteo.</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>Software de seguimiento de productos.</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>Seguimiento en tiempo real.</p>
                 </div>
                 <div class="col-lg-7 col-xl-7 col-12">
-                    <p class="mt-4"><strong>SFAST es una empresa que nació 2017 </strong>como solución a la alta demanda de nuestro principal cliente, partimos con apenas 5 bultos al mes y hoy actualmente entregamos más de 5000 bultos. Este gran salto demuestra el alto
-                        nivel de compromiso y confianza con nuestros clientes “si tu creces nosotros también”. Nos adaptamos a las necesidades de tu empresa ofreciendo un servicio totalmente personalizado.</p>
-
-                    <p><strong>Somos un equipo de alto valor donde nos apasiona el servicio al cliente</strong> con una profunda orientación a la resolución de problemas es por eso que somos realistas al decir que tu encomienda será entregada con éxito.
-                        Queremos ser tu partner estratégico en tu negocio y continuar creciendo juntos facilitando tus relaciones comerciales.</p>
+                    <form action="" class="shadow p-5 bg-body rounded-3">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="namePerson" class="form-label">Nombre Completo*</label>
+                                <input type="text" class="form-control" id="namePerson" placeholder="Mi nombre" required>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <label for="nameCompany" class="form-label">Nombre Empresa</label>
+                                <input type="text" class="form-control" id="nameCompany" placeholder="Nombre de mi Empresa">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <label for="idCompany" class="form-label">Rut Empresa</label>
+                                <input type="text" class="form-control" id="idCompany" placeholder="76.123.456-7">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <label for="inputEmail4" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="micorreo@empresa.cl" required>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <label for="phone" class="form-label">Número de Télefono*</label>
+                                <input type="text" class="form-control" id="phone" placeholder="+569 1234 5678" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="floatingTextarea" class="form-label">Comentario</label>
+                                <textarea class="form-control" placeholder="Dejanos tu comentario aquí" id="floatingTextarea"></textarea>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <button class="button button-blue" type="submit " id="button-contact">Enviar Datos</button>
+                            </div>
+                        </div>
+                    </form>
 
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-body py-5">
+    <!-- <section class="bg-body py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-6 col-md-8 col-12 d-flex">
@@ -105,7 +146,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <!-- footer site -->
     <footer class="bg-blue py-5" role="navigation" title="Footer del Sitio">
