@@ -42,7 +42,7 @@ const getSelector = element => {
 
   if (!selector || selector === '#') {
     let hrefAttr = element.getAttribute('href'); // The only valid content that could double as a selector are IDs or classes,
-    // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
+    // so everything starting with `#` or `.`. If a"real" URL is used as the selector,
     // `document.querySelector` will rightfully complain it is invalid.
     // See https://github.com/twbs/bootstrap/issues/32273
 
@@ -135,7 +135,7 @@ const typeCheckConfig = (componentName, config, configTypes) => {
     const valueType = value && isElement(value) ? 'element' : toType(value);
 
     if (!new RegExp(expectedTypes).test(valueType)) {
-      throw new TypeError(`${componentName.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`);
+      throw new TypeError(`${componentName.toUpperCase()}: Option"${property}" provided type"${valueType}" but expected type"${expectedTypes}".`);
     }
   });
 };
@@ -711,7 +711,7 @@ class BaseComponent {
   }
 
   static get NAME() {
-    throw new Error('You have to implement the static method "NAME", for each component!');
+    throw new Error('You have to implement the static method"NAME", for each component!');
   }
 
   static get DATA_KEY() {
@@ -814,7 +814,7 @@ class Alert extends BaseComponent {
       }
 
       if (data[config] === undefined || config.startsWith('_') || config === 'constructor') {
-        throw new TypeError(`No method named "${config}"`);
+        throw new TypeError(`No method named"${config}"`);
       }
 
       data[config](this);
@@ -1537,7 +1537,7 @@ class Carousel extends BaseComponent {
       data.to(config);
     } else if (typeof action === 'string') {
       if (typeof data[action] === 'undefined') {
-        throw new TypeError(`No method named "${action}"`);
+        throw new TypeError(`No method named"${action}"`);
       }
 
       data[action]();
@@ -1883,7 +1883,7 @@ class Collapse extends BaseComponent {
 
       if (typeof config === 'string') {
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config]();
@@ -2123,7 +2123,7 @@ class Dropdown extends BaseComponent {
 
     if (typeof config.reference === 'object' && !isElement(config.reference) && typeof config.reference.getBoundingClientRect !== 'function') {
       // Popper virtual elements require a getBoundingClientRect method
-      throw new TypeError(`${NAME$9.toUpperCase()}: Option "reference" provided type "object" without a required "getBoundingClientRect" method.`);
+      throw new TypeError(`${NAME$9.toUpperCase()}: Option"reference" provided type"object" without a required"getBoundingClientRect" method.`);
     }
 
     return config;
@@ -2256,7 +2256,7 @@ class Dropdown extends BaseComponent {
       }
 
       if (typeof data[config] === 'undefined') {
-        throw new TypeError(`No method named "${config}"`);
+        throw new TypeError(`No method named"${config}"`);
       }
 
       data[config]();
@@ -2574,7 +2574,7 @@ class Backdrop {
   _getConfig(config) {
     config = { ...Default$7,
       ...(typeof config === 'object' ? config : {})
-    }; // use getElement() with the default "body" to get a fresh Element on each instantiation
+    }; // use getElement() with the default"body" to get a fresh Element on each instantiation
 
     config.rootElement = getElement(config.rootElement);
     typeCheckConfig(NAME$8, config, DefaultType$7);
@@ -3090,7 +3090,7 @@ class Modal extends BaseComponent {
       }
 
       if (typeof data[config] === 'undefined') {
-        throw new TypeError(`No method named "${config}"`);
+        throw new TypeError(`No method named"${config}"`);
       }
 
       data[config](relatedTarget);
@@ -3348,7 +3348,7 @@ class Offcanvas extends BaseComponent {
       }
 
       if (data[config] === undefined || config.startsWith('_') || config === 'constructor') {
-        throw new TypeError(`No method named "${config}"`);
+        throw new TypeError(`No method named"${config}"`);
       }
 
       data[config](this);
@@ -4203,7 +4203,7 @@ class Tooltip extends BaseComponent {
 
       if (typeof config === 'string') {
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config]();
@@ -4313,7 +4313,7 @@ class Popover extends Tooltip {
 
       if (typeof config === 'string') {
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config]();
@@ -4540,7 +4540,7 @@ class ScrollSpy extends BaseComponent {
       }
 
       if (typeof data[config] === 'undefined') {
-        throw new TypeError(`No method named "${config}"`);
+        throw new TypeError(`No method named"${config}"`);
       }
 
       data[config]();
@@ -4728,7 +4728,7 @@ class Tab extends BaseComponent {
 
       if (typeof config === 'string') {
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config]();
@@ -4975,7 +4975,7 @@ class Toast extends BaseComponent {
 
       if (typeof config === 'string') {
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config](this);

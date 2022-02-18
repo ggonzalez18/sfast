@@ -46,7 +46,7 @@
 
     if (!selector || selector === '#') {
       let hrefAttr = element.getAttribute('href'); // The only valid content that could double as a selector are IDs or classes,
-      // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
+      // so everything starting with `#` or `.`. If a"real" URL is used as the selector,
       // `document.querySelector` will rightfully complain it is invalid.
       // See https://github.com/twbs/bootstrap/issues/32273
 
@@ -139,7 +139,7 @@
       const valueType = value && isElement$1(value) ? 'element' : toType(value);
 
       if (!new RegExp(expectedTypes).test(valueType)) {
-        throw new TypeError(`${componentName.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`);
+        throw new TypeError(`${componentName.toUpperCase()}: Option"${property}" provided type"${valueType}" but expected type"${expectedTypes}".`);
       }
     });
   };
@@ -715,7 +715,7 @@
     }
 
     static get NAME() {
-      throw new Error('You have to implement the static method "NAME", for each component!');
+      throw new Error('You have to implement the static method"NAME", for each component!');
     }
 
     static get DATA_KEY() {
@@ -818,7 +818,7 @@
         }
 
         if (data[config] === undefined || config.startsWith('_') || config === 'constructor') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config](this);
@@ -1541,7 +1541,7 @@
         data.to(config);
       } else if (typeof action === 'string') {
         if (typeof data[action] === 'undefined') {
-          throw new TypeError(`No method named "${action}"`);
+          throw new TypeError(`No method named"${action}"`);
         }
 
         data[action]();
@@ -1887,7 +1887,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError(`No method named "${config}"`);
+            throw new TypeError(`No method named"${config}"`);
           }
 
           data[config]();
@@ -1939,10 +1939,10 @@
   var popper = 'popper';
   var reference = 'reference';
   var variationPlacements = /*#__PURE__*/basePlacements.reduce(function (acc, placement) {
-    return acc.concat([placement + "-" + start, placement + "-" + end]);
+    return acc.concat([placement +"-" + start, placement +"-" + end]);
   }, []);
   var placements = /*#__PURE__*/[].concat(basePlacements, [auto]).reduce(function (acc, placement) {
-    return acc.concat([placement, placement + "-" + start, placement + "-" + end]);
+    return acc.concat([placement, placement +"-" + start, placement +"-" + end]);
   }, []); // modifiers that need to read the DOM
 
   var beforeRead = 'beforeRead';
@@ -2457,10 +2457,10 @@
     if (gpuAcceleration) {
       var _Object$assign;
 
-      return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? '0' : '', _Object$assign[sideX] = hasX ? '0' : '', _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
+      return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? '0' : '', _Object$assign[sideX] = hasX ? '0' : '', _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ?"translate(" + x +"px," + y +"px)" :"translate3d(" + x +"px," + y +"px, 0)", _Object$assign));
     }
 
-    return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : '', _Object$assign2[sideX] = hasX ? x + "px" : '', _Object$assign2.transform = '', _Object$assign2));
+    return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y +"px" : '', _Object$assign2[sideX] = hasX ? x +"px" : '', _Object$assign2.transform = '', _Object$assign2));
   }
 
   function computeStyles(_ref4) {
@@ -2626,7 +2626,7 @@
       // Feature detection fails in mobile emulation mode in Chrome.
       // Math.abs(win.innerWidth / visualViewport.scale - visualViewport.width) <
       // 0.001
-      // Fallback here: "Not Safari" userAgent
+      // Fallback here:"Not Safari" userAgent
 
       if (!/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
         x = visualViewport.offsetLeft;
@@ -2737,7 +2737,7 @@
 
   function getClientRectFromMixedType(element, clippingParent) {
     return clippingParent === viewport ? rectToClientRect(getViewportRect(element)) : isHTMLElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
-  } // A "clipping parent" is an overflowable container with the characteristic of
+  } // A"clipping parent" is an overflowable container with the characteristic of
   // clipping (or hiding) overflowing elements with a position different from
   // `initial`
 
@@ -3047,14 +3047,14 @@
 
         if (fittingPlacement) {
           firstFittingPlacement = fittingPlacement;
-          return "break";
+          return"break";
         }
       };
 
       for (var _i = numberOfChecks; _i > 0; _i--) {
         var _ret = _loop(_i);
 
-        if (_ret === "break") break;
+        if (_ret ==="break") break;
       }
     }
 
@@ -3913,7 +3913,7 @@
 
       if (typeof config.reference === 'object' && !isElement$1(config.reference) && typeof config.reference.getBoundingClientRect !== 'function') {
         // Popper virtual elements require a getBoundingClientRect method
-        throw new TypeError(`${NAME$9.toUpperCase()}: Option "reference" provided type "object" without a required "getBoundingClientRect" method.`);
+        throw new TypeError(`${NAME$9.toUpperCase()}: Option"reference" provided type"object" without a required"getBoundingClientRect" method.`);
       }
 
       return config;
@@ -4046,7 +4046,7 @@
         }
 
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config]();
@@ -4364,7 +4364,7 @@
     _getConfig(config) {
       config = { ...Default$7,
         ...(typeof config === 'object' ? config : {})
-      }; // use getElement() with the default "body" to get a fresh Element on each instantiation
+      }; // use getElement() with the default"body" to get a fresh Element on each instantiation
 
       config.rootElement = getElement(config.rootElement);
       typeCheckConfig(NAME$8, config, DefaultType$7);
@@ -4880,7 +4880,7 @@
         }
 
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config](relatedTarget);
@@ -5138,7 +5138,7 @@
         }
 
         if (data[config] === undefined || config.startsWith('_') || config === 'constructor') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config](this);
@@ -5993,7 +5993,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError(`No method named "${config}"`);
+            throw new TypeError(`No method named"${config}"`);
           }
 
           data[config]();
@@ -6103,7 +6103,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError(`No method named "${config}"`);
+            throw new TypeError(`No method named"${config}"`);
           }
 
           data[config]();
@@ -6330,7 +6330,7 @@
         }
 
         if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
+          throw new TypeError(`No method named"${config}"`);
         }
 
         data[config]();
@@ -6518,7 +6518,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError(`No method named "${config}"`);
+            throw new TypeError(`No method named"${config}"`);
           }
 
           data[config]();
@@ -6765,7 +6765,7 @@
 
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
-            throw new TypeError(`No method named "${config}"`);
+            throw new TypeError(`No method named"${config}"`);
           }
 
           data[config](this);

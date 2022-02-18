@@ -78,6 +78,17 @@
     padding: 30px;
 }
 
+
+/* servicios */
+
+.servicios-link {
+    color: #2F2F41;
+}
+
+.servicios-link:hover {
+    color: #F08323;
+}
+
 @media (max-width: 576px) {
     .title-bgColor {
         font-size: 28px;
